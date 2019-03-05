@@ -1,26 +1,44 @@
 Git is a distributed version control system.
 Git is free software.
 
-一、创建
+一、基本命令
+1.创建
 创建一个新的本地仓库:
-git init
+$ git init
 
-
-二、本地修改
+2.本地修改
 把当前修改添加到下次提交中,(可反复多次使用，添加多个文件):
-git add <file>
-例: git add file1.txt
-	git add file2.txt file3.txt
-	git commit -m "add 3 files."
+$ git add <file>
 
 提交之前已标记的变化：
-git commit
+$ git commit
 
 附加消息提交:
-git commit -m "message here"
+$ git commit -m "message here"
 
 显示工作路径下已修改的文件:
-git status
+$ git status
 
 显示与上次提交版本文件的不同：
-git diff
+$ git diff
+
+3.提交历史
+从最新提交开始，显示所有的提交记录（显示hash， 作者信息，提交的标题和时间）：
+$ git log
+
+
+二、例子
+1.创建版本库
+$ git init 					    // 将当前目录变成一个新的本地仓库
+
+2.添加文件到Git仓库
+$ git add file1.txt             // 把当前修改添加到下次提交中
+$ git add file2.txt file3.txt   // 把当前修改添加到下次提交中
+$ git commit -m "add 3 files."  // 提交之前已标记的变化, 附加消息
+
+3.查看仓库当前状态 
+$ git status 					// 显示仓库当前状态,文件有无被修改过
+$ git diff						// 显示上次怎么修改
+
+4.版本回退
+$ git log						// 显示从最近到最远的提交日志
