@@ -1,2 +1,23 @@
-Git is a version control system.
+Git is a distributed version control system.
 Git is free software.
+
+一、创建
+创建一个新的本地仓库:
+git init
+
+
+二、本地修改
+把当前修改添加到下次提交中,(可反复多次使用，添加多个文件):
+git add <file>
+例: git add file1.txt
+	git add file2.txt file3.txt
+	git commit -m "add 3 files."
+
+附加消息提交:
+git commit -m "message here"
+
+显示工作路径下已修改的文件:
+git status
+
+显示与上次提交版本文件的不同：
+git diff
