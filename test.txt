@@ -13,6 +13,9 @@ git add <file>
 	git add file2.txt file3.txt
 	git commit -m "add 3 files."
 
+提交之前已标记的变化：
+git commit
+
 附加消息提交:
 git commit -m "message here"
 
