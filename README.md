@@ -206,60 +206,60 @@ $ git push <remote> --tags
 
 #### 创建版本库
 ```
-$ git init      // 将当前目录变成一个新的本地仓库
+$ git init                          // 将当前目录变成一个新的本地仓库
 ```
 
 #### 添加文件到Git仓库
 ```
-$ git add file1.txt       // 把当前修改添加到下次提交中
+$ git add file1.txt                 // 把当前修改添加到下次提交中
 $ git add file2.txt file3.txt       // 把当前修改添加到下次提交中
 $ git commit -m "add 3 files."      // 提交之前已标记的变化, 附加消息
 ```
 
 #### 查看仓库当前状态 
 ```
-$ git status 					// 显示仓库当前状态,文件有无被修改过
-$ git diff						// 显示上次怎么修改
+$ git status 					              // 显示仓库当前状态,文件有无被修改过
+$ git diff						              // 显示上次怎么修改
 ```
 
 #### 版本回退
 ```
-$ git log (按 q 键退出)			// 显示从最近到最远的提交日志
-$ git reset --hard HEAD			// 回退到上一个版本
-$ git reset --hard 9240e23      // 指定回到某个版本
-$ git reflog					// 查看命令历史, 确认版本号
+$ git log (按 q 键退出)			        // 显示从最近到最远的提交日志
+$ git reset --hard HEAD			       // 回退到上一个版本
+$ git reset --hard 9240e23         // 指定回到某个版本
+$ git reflog                       // 查看命令历史, 确认版本号
 ```
 
 #### 撤销修改
 ```
-$ git checkout -- file1.txt		// 在工作区的修改撤销（git add 之前）
-$ git checkout HEAD file.txt	// 把暂存区的修改撤销掉（git add 之后 git commmit之前 )
+$ git checkout -- file1.txt		     // 在工作区的修改撤销（git add 之前）
+$ git checkout HEAD file.txt       // 把暂存区的修改撤销掉（git add 之后 git commmit之前 )
 ```
 
 #### 删除文件
 ```
-$ git rm file1.txt				// 从版本库中删除该文件
+$ git rm file1.txt				         // 从版本库中删除该文件
 ```
 
 #### 关联远程仓库
 ```
 $ git remote add origin git@server-name:path/repo-name.git // 添加新的远程端（GitHub的仓库）
-$ git push -u origin master 	// 第一次推送时,上传 master 分支的所有内容
-$ git push origin master 		// 推送 master 分支最新的修改
+$ git push -u origin master 	    // 第一次推送时,上传 master 分支的所有内容
+$ git push origin master 		      // 推送 master 分支最新的修改
 ```
 
 #### 分支管理
 ```
-$ git checkout -b dev 			// 创建 dev 分支，然后切换到 dev 分支
-$ git branch 					// 列出所有的分支
-$ git checkout master 			// 切换回 master 分支
-$ git merge dev 				// 把 dev 分支的工作成果合并到当前分支上
-$ git branch -d dev 			// 删除 dev 分支
+$ git checkout -b dev 			     // 创建 dev 分支，然后切换到 dev 分支
+$ git branch 					           // 列出所有的分支
+$ git checkout master 			    // 切换回 master 分支
+$ git merge dev 				        // 把 dev 分支的工作成果合并到当前分支上
+$ git branch -d dev 			      // 删除 dev 分支
 ```
 
 #### 标签管理
 ```
-$ git tag v1.0	 				// 打一个标签
-$ git tag 						// 查看标签
-$ git push origin v1.0			// 推送标签 v1.0 到远程
+$ git tag v1.0	 				        // 打一个标签
+$ git tag 						          // 查看标签
+$ git push origin v1.0			    // 推送标签 v1.0 到远程
 ```
