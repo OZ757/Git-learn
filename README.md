@@ -9,8 +9,8 @@
 -----------------
 
 # 学习时的参考资料:
-[廖雪峰的 Git 教程](https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)
-[Git Cheat Sheet 中文版](https://github.com/flyhigher139/Git-Cheat-Sheet)
+1. [廖雪峰的 Git 教程](https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)
+2. [Git Cheat Sheet 中文版](https://github.com/flyhigher139/Git-Cheat-Sheet)
 
 -----------------
 
@@ -206,14 +206,14 @@ $ git push <remote> --tags
 
 #### 创建版本库
 ```
-$ git init 					    // 将当前目录变成一个新的本地仓库
+$ git init      // 将当前目录变成一个新的本地仓库
 ```
 
 #### 添加文件到Git仓库
 ```
-$ git add file1.txt             // 把当前修改添加到下次提交中
-$ git add file2.txt file3.txt   // 把当前修改添加到下次提交中
-$ git commit -m "add 3 files."  // 提交之前已标记的变化, 附加消息
+$ git add file1.txt       // 把当前修改添加到下次提交中
+$ git add file2.txt file3.txt       // 把当前修改添加到下次提交中
+$ git commit -m "add 3 files."      // 提交之前已标记的变化, 附加消息
 ```
 
 #### 查看仓库当前状态 
