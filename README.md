@@ -224,8 +224,8 @@ $ git diff                          // 显示上次怎么修改
 
 #### 版本回退
 ```
-$ git log (按 q 键退出)			        // 显示从最近到最远的提交日志
-$ git reset --hard HEAD			       // 回退到上一个版本
+$ git log (按 q 键退出)             // 显示从最近到最远的提交日志
+$ git reset --hard HEAD            // 回退到上一个版本
 $ git reset --hard 9240e23         // 指定回到某个版本
 $ git reflog                       // 查看命令历史, 确认版本号
 ```
@@ -244,8 +244,8 @@ $ git rm file1.txt                 // 从版本库中删除该文件
 #### 关联远程仓库
 ```
 $ git remote add origin git@server-name:path/repo-name.git // 添加新的远程端（GitHub的仓库）
-$ git push -u origin master 	    // 第一次推送时,上传 master 分支的所有内容
-$ git push origin master 		      // 推送 master 分支最新的修改
+$ git push -u origin master        // 第一次推送时,上传 master 分支的所有内容
+$ git push origin master          // 推送 master 分支最新的修改
 ```
 
 #### 分支管理
